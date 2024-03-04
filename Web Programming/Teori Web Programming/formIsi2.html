@@ -1,0 +1,68 @@
+<html lang="en">
+    <style>
+        .red-text {
+            color: red;
+        }
+
+        .black-text {
+            color: black;
+        }
+        .fieldset-border {
+            border: transparent;
+        }
+        .label-text {
+            display: inline-block;
+            width: 85px;
+            text-align: left;
+            margin-right: 10px;
+        }
+        .input-text {
+            width: 250px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    </style>
+    <head>
+        <body>
+            <form action="formIsi2.php" method="post">
+                <fieldset class="fieldset-border">
+                    <p>
+                        <label class="label-text"><span class="red-text">*</span>Address</label>
+                        <input type="text" name="address" size="21px">
+                        <p><input type="text" name="address" size="21px"></p>
+                    </p>
+                    <p>
+                        <label class="label-text"><span class="red-text">*</span>City</label>
+                        <input type="text" name="city" size="21px">
+                    </p>
+                    <p>
+                        <label class="label-text"><span class="red-text">*</span>State</label>
+                        <select name="state">
+                            <option value="JKT - Jakarta">JKT - Jakarta</option>
+                            <option value="BTN - Banten">BTN - Banten</option>
+                            <option value="KLM - Kuala Lumpur">KLM - Kuala Lumpur</option>
+                            <option value="SNG - Singapore">SNG - Singapore></option>
+                        </select>
+                    </p>
+                    <p>
+                        <label class="label-text"><span class="red-text">*</span>Zip code</label>
+                        <input type="text" name="zip_code" size="21px">
+                    </p>
+                    <p>
+                        <label class="label-text"><span class="red-text">*</span>Country</label>
+                        <select name="country">
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Singapore">Singapore</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label><span class="red-text">*</span>Addres Type</label>
+                        <Label><input type="radio" name="address_type" value="Home"/> Home</Label>
+                        <Label><input type="radio" name="address_type" value="Business"/>Buasiness</Label>
+                    </p>
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>

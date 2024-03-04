@@ -1,0 +1,69 @@
+<html lang="en">
+    <style>
+        .red-text {
+            color: red;
+        }
+
+        .black-text {
+            color: black;
+        }
+        .fieldset-border {
+            border: transparent;
+        }
+        .label-text {
+            display: inline-block;
+            width: 120px;
+            text-align: left;
+            margin-right: 10px;
+        }
+        .input-text {
+            width: 250px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    </style>
+    <head>
+        <body>
+            <table>
+                <tr><td>
+                    <form action="formIsi1.php" method="post">
+                        <fieldset class="fieldset-border">
+                            <p>
+                                <Label class="label-text"><span class="red-text">*</span>First Name</Label>
+                                <input type="text" name="first_name" size="21px">
+                            </p>
+                            <p>
+                                <Label class="label-text"><span class="red-text">*</span>Last Name</Label>
+                                <input type="text" name="last_name" size="21px">
+                            </p>
+                            <p>
+                                <label class="label-text">Company</label>
+                                <input type="text" name="company" size="21px">
+                            </p>
+                            <p>
+                                <Label class="label-text"><span class="red-text">*</span>Phone</Label>
+                                <input type="text" name="phone"size="10px"> <input type="text" name="phone" size="5px">
+                                <a target="_parent" href="TugasP3deni.html" > Incl.Number?</a>
+                                <br><output>Phone Number. Ext</output></br>
+                            </p>
+                            <p>
+                                <label class="label-text"><span class="red-text">*</span>Email</label>
+                                <input type="text" name="email" size="21px">
+                            </p>
+                            <p>
+                                <label class="label-text"><span class="red-text">*</span>Re-type Email</label>
+                                <input type="text" name="retype_email" size="21px">
+                                <br><output>Enter an address where we can send an e-mail confirming your order</output></br>
+                            </p>
+                        </fieldset>
+                    </form>
+                </td></tr>
+            </table>
+            <form action="formIsi1.php" method="post">
+                        <label>Are you shipping this order to yor billing addres? </label>
+                        <label><input type="radio" name="Are you shipping this order to yor billing addres?" value="yes"/>Yes</label>
+                        <label><input type="radio" name="Are you shipping this order to yor billing addres?" value="no"/>No</label>
+            </form>
+        </body>
+    </head>
+</html>
